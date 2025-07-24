@@ -6,5 +6,5 @@ shell.setAlias("hexload", "/programfiles/hexlator/hexload.lua")
 local completion = require "cc.shell.completion"
 local file_complete = completion.build(completion.file)
 
-shell.setCompletionFunction("hexxyedit", file_complete)
-shell.setCompletionFunction("hexload", file_complete)
+shell.setCompletionFunction("programfiles/hexlator/hexxyedit.lua", file_complete)
+shell.setCompletionFunction("programfiles/hexlator/hexload.lua", file_complete)
