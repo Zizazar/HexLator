@@ -8,7 +8,7 @@ else
     print("Usage: install_hexlator [main|dev] [install path]")
     shell.exit()
 end
-local raw_url = string.format("https://raw.githubusercontent.com/Shirtsy/HexLator/%s/", branch)
+local raw_url = string.format("https://raw.githubusercontent.com/Zizazar/HexLator/%s/", branch)
 
 local install_path
 if not args[2] then
