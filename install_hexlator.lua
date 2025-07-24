@@ -25,7 +25,6 @@ shell.execute("wget", raw_url.."symbol-registry.json", install_path.."symbol-reg
 shell.execute("wget", raw_url.."hexxyedit.lua", install_path.."hexxyedit.lua")
 
 shell.execute("delete", "/startup.lua")
-local file = fs.open("startup.lua","w")
-file.write(string.format('shell.setAlias("hexget", "%shexget.lua") shell.setAlias("hexxyedit", "%shexxyedit.lua")',install_path,install_path))
-file.close()
+shell.execute("wget", raw_url.."modifired_startup.lua", "/startup.lua")
+
 os.reboot()
